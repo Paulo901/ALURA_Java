@@ -1,4 +1,4 @@
-package usapoo;
+package pooepolimorf;
 
 public class chamandoobj {
 
@@ -36,10 +36,14 @@ public class chamandoobj {
 	 rodrigo.setNome("Paulo");
 	 rodrigo.setProfissao("Programador");
 	 ContaB.setSenha(12345432);
+	 
+		
 	 System.out.println(ContaB.getTitular().getNome());
 	 System.out.println(ContaB.getTitular().getCpf());
 	 System.out.println(rodrigo.getProfissao());
 	 System.out.println(ContaB.getSaldo());
+	 
+	 throw new ExceptionInsuficiente("Ops");
 	 
 	}
 }

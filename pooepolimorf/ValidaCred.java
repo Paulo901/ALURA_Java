@@ -1,4 +1,4 @@
-package usapoo;
+package pooepolimorf;
 
 public abstract interface ValidaCred{
   

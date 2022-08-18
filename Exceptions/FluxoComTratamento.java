@@ -9,7 +9,8 @@ public class FluxoComTratamento {
         try {
         metodo1();
         
-        } catch(ArithmeticException | NullPointerException em){
+        //Colocando diretamente a Classe Exception, não precisamos especificar exceções
+        } catch(Exception em){
         	em.getMessage();
         	System.out.println(em.getMessage());
         	
@@ -18,7 +19,7 @@ public class FluxoComTratamento {
         System.out.println("Fim do main");
     }
 
-    private static void metodo1() {
+    private static void metodo1()  {
         System.out.println("Ini do metodo1");
         metodo2();
         System.out.println("Fim do metodo1");
@@ -27,7 +28,9 @@ public class FluxoComTratamento {
     private static void metodo2() {
         System.out.println("Ini do metodo2");
         
-        throw new ArithmeticException("Mensagem Aleatória");
+        //throw new ArithmeticException("Mensagem Aleatória");
+        //não compila pois tem que colocar o throws, que fiz na Classe OutroFluxo
+        // -->  throw new MinhaExcecao("Ops");  <--
         /*
          Comentando para não dar erro de compilação
          

@@ -1,4 +1,4 @@
-package usapoo;
+package pooepolimorf;
 
 //Conectado com Cliente por enquanto para não dar erro
 //Erro ao conectar com a classe conta
@@ -28,10 +28,10 @@ private int senha;
         }
    
         @Override
-        public boolean transfere(double valor,Conta destino) {
+        public void transfere(double valor,Conta destino) {
             //Contas Vip recebem descontos de até 5% de desconto
             this.deposita(valor * getDescontos());
-            return super.transfere(valor, destino);   
+            return;   
         }
 
 

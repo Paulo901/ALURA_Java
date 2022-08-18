@@ -1,4 +1,4 @@
-package usapoo;
+package pooepolimorf;
 
 //Conectado com Cliente por enquanto para não dar erro
 //Erro ao conectar com a classe conta

@@ -1,15 +1,18 @@
 package Exceptions;
 
-public class Fluxo {
+public class OutroFluxo {
 
+	//Exceções: parte 4 - Checked e Unchecked
+	//					- Esse é um Checked
+	
     public static void main(String[] args) {
         System.out.println("Ini do main");
         
-        
+        //Se não fosse o try_Catch, eu deveria colocar o throws aqui também. Try_catch funciona como um throws
         try {
         metodo1();
         
-        } catch(ArithmeticException | NullPointerException em){
+        } catch(MinhaExcecao em){
         	em.getMessage();
         	System.out.println(em.getMessage());
         	
@@ -18,25 +21,19 @@ public class Fluxo {
         System.out.println("Fim do main");
     }
 
-    private static void metodo1() {
+    private static void metodo1() throws MinhaExcecao {
         System.out.println("Ini do metodo1");
         metodo2();
         System.out.println("Fim do metodo1");
     }
 
-    private static void metodo2() {
+    private static void metodo2() throws MinhaExcecao{
         System.out.println("Ini do metodo2");
         for(int i = 1; i <= 5; i++) {
         	System.out.println(i);
-        	// Criando um código com um problema lógico para o Catch sinalizar
-        	int a = 10 / 0;
-        	// por algum motivo não dá exceção na indicador sem objeto, mas deixei o catch por didatica. Fica a dúvida(talvez seja atualização)
-        	ExemploExcecao teste1 = null;
         	
-            
+            throw new MinhaExcecao("fim");
         }
         System.out.println("Fim do metodo2");
     }
-    
-    
 }

@@ -1,5 +1,5 @@
 
-package usapoo;
+package pooepolimorf;
 
 public class gerente implements ValidaCred {
 
