@@ -2,8 +2,8 @@ package Exceptions;
 
 public class OutroFluxo {
 
-	//Exceções: parte 4 - Checked e Unchecked
-	//					- Esse é um Checked
+	//Exceções: parte4 - Checked e Unchecked
+	//				   - Esse é um Checked
 	
     public static void main(String[] args) {
         System.out.println("Ini do main");

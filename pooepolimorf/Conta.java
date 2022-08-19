@@ -14,10 +14,8 @@ public abstract class Conta {
     
     //Criando Construtor
     	public Conta(int agencia, int numero ) {
-    		if(agencia <=0 || numero <=0) {
-    			System.out.println("Agência ou número invalidos. A agencia será padronizada");
-                        this.agencia = 1;
-    			this.numero = 1;    
+    		if(agencia <= 0 || numero <= 0) {
+    			throw new IllegalArgumentException("Agencia ou número inválido");   
                       
     		}   else {
     				

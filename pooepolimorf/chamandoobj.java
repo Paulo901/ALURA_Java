@@ -25,25 +25,38 @@ public class chamandoobj {
 	 
 	 System.out.println(ContaA.getTitular().getNome());
 	 System.out.println(ContaA.getTitular());
-
-	 ContaVip ContaB = new ContaVip(5678, 8765);
+	 
+	 
 	 Cliente rodrigo = new Cliente();
-	 ContaB.setTitular(rodrigo);
-	 ContaB.deposita(100);
-	 ContaB.transfere(50, ContaA);
-	 ContaB.saca(10);
+		
 	 rodrigo.setCpf("123-456-789-01");
 	 rodrigo.setNome("Paulo");
 	 rodrigo.setProfissao("Programador");
-	 ContaB.setSenha(12345432);
+	 // Adicionei uma Excecao no construtor
+	 try {
+		 ContaVip ContaB = new ContaVip(-5678, 8765);
+		 ContaB.setTitular(rodrigo);
+		 ContaB.deposita(100);
+		 ContaB.transfere(50, ContaA);
+		 ContaB.saca(10);
+		 ContaB.setSenha(12345432);
+		 
+		 System.out.println(ContaB.getTitular().getNome());
+		 System.out.println(ContaB.getTitular().getCpf());
+		 System.out.println(rodrigo.getProfissao());
+		 System.out.println(ContaB.getSaldo());
+		 
+	 } catch(IllegalArgumentException e){
+		 
+		 System.out.println(e.getMessage());
+		 
+	 }
 	 
-		
-	 System.out.println(ContaB.getTitular().getNome());
-	 System.out.println(ContaB.getTitular().getCpf());
-	 System.out.println(rodrigo.getProfissao());
-	 System.out.println(ContaB.getSaldo());
 	 
-	 throw new ExceptionInsuficiente("Ops");
+	 
+	 
+	 
+	 //throw new ExceptionInsuficiente("Ops");
 	 
 	}
 }
