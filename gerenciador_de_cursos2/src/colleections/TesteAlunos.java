@@ -14,9 +14,9 @@ public class TesteAlunos {
 	        alunos.add("Nico");    
 
 	       //tente imprimir os alunos usando foreach
-	        for (String string : alunos) {
-				System.out.println(string);
-			}
+	        alunos.forEach (aluno -> {
+				System.out.println(aluno);
+			});
 	        
 	      
 	        //2) imprima o tamanho da colecao
@@ -27,10 +27,8 @@ public class TesteAlunos {
 	        alunos.add("Paulo");
 	        boolean adicionou = alunos.add("Pedro");
 	        //4) imprima novamente o tamanho da colecao
-	        alunos.forEach (aluno -> {
-	        	
-	        	System.out.println("Adicionou? " + adicionou);
-	        	});
+	      
+	        System.out.println("Adicionou? " + adicionou);
 	        	
     }
 }
