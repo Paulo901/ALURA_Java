@@ -15,6 +15,7 @@ public class TesteAlunosNoCurso {
 	        Alunos a2 = new Alunos("Guilherme ", 5617);
 	        Alunos a3 = new Alunos("Mauricio Aniche", 17645);
 
+	        
 	    javaColecoes.matricula(a1);
 	    javaColecoes.matricula(a2);
 	    javaColecoes.matricula(a3);
@@ -25,12 +26,19 @@ public class TesteAlunosNoCurso {
 	    
 	    Alunos a4 = new Alunos("Digo", 123);
 	    
-	    javaColecoes.matricula(a4);
+	    //javaColecoes.matricula(a4);
 	    
 	    javaColecoes.getAlunos().forEach(aluno -> {
 	    	System.out.println(aluno);
 	    });
 	    Alunos p = new Alunos("Paulo Rodrigo", 34672);
 	    System.out.println(p.hashCode() == a1.hashCode());
+	    
+	    System.out.println(javaColecoes.estaMatriculado(a4));
+	    Alunos aluno = javaColecoes.buscaMatriculado(34672);
+	    System.out.println(aluno);
+	    
+	    
+	    
 	   }
 }
