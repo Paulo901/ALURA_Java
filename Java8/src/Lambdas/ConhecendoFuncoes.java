@@ -1,3 +1,4 @@
+package Lambdas;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
@@ -35,7 +36,8 @@ public class ConhecendoFuncoes {
 
 		// Chegando no Lambda, retirando a criação do objeto, o Java já entende por
 		// baixo dos panos que estou criando um Consumer
-		aleatorio.forEach(s -> System.out.println(s));
+		aleatorio.forEach(System.out::println);
+		
 		System.out.println(aleatorio);
 
 //---------------------------------Comparator----------------------------------------------------
@@ -54,6 +56,8 @@ public class ConhecendoFuncoes {
 		});
 		//para encurtar, usei o compare do Integer para comparar o tamanho
 		aleatorio.sort((s1, s2) -> Integer.compare(s1.length(), s2.length()));
+		
+		aleatorio.sort(Comparator.comparing(String::length));
 
 		System.out.println(aleatorio);
 	}
