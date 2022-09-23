@@ -9,6 +9,6 @@ public class Atvidades {
 		new Thread(() -> System.out.println("Executando um Runnable")).start();
 
 		//Atividade 2 : Usando Comparator.comparing(modificação em ConhecendoFUncoes)
-		
+		//Atividade 3 : Usando Stream pra calcular a média entre cursos
 	}
 }
