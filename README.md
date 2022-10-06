@@ -14,5 +14,5 @@ pode melhorar
 ## Developing
 ```bash
 git clone https://github.com/Paulo901/Sewing_System.git
-cd Sewing_System/
+cd Aulas.Codigos/
 ```
