@@ -13,6 +13,6 @@ pode melhorar
 
 ## Developing
 ```bash
-git clone https://github.com/Paulo901/Sewing_System.git
+git clone https://github.com/Paulo901/Aulas.Codigos.git
 cd Aulas.Codigos/
 ```
