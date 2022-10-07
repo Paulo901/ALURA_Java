@@ -6,7 +6,7 @@ pode melhorar
  - este programa foi feito em Java. Utilizando-se de uma IDE de sua preferência, mas que suporta a linguagem, adicione o plugin de Java
  - Disponível para versões do Java 8 ou superior em determinadas partes.
 
-## FONTES
+## Fontes
   - site Alura
   - fóruns : servidor da Alura
 
